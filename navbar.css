@@ -1,0 +1,94 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 15px 40px;
+    background: #111;
+  
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    animation: slideDown 0.6s ease;
+  }
+  
+  /* Logo */
+  .logo {
+    color: #00bcd4;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  /* Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  /* underline animation */
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #00bcd4;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  /* Button */
+  .btn {
+    padding: 8px 18px;
+    border: none;
+    background: #00bcd4;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    background: #0097a7;
+  }
+  
+  /* Animation دخول */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

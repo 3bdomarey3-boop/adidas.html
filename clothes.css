@@ -1,0 +1,65 @@
+/* سكشن الملابس */
+.clothes {
+    padding: 60px 20px;
+    background: #111; /* خلفية غامقة عشان تفرق */
+    text-align: center;
+    color: white;
+  }
+  
+  .clothes h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #00bcd4;
+  }
+  
+  /* نفس الكروت */
+  .clothes .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* الكارت */
+  .clothes .card {
+    background: #1a1a1a;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+  
+    transition: 0.3s;
+  }
+  
+  /* hover */
+  .clothes .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  }
+  
+  /* الصورة */
+  .clothes .card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  
+  .clothes .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* زرار */
+  .buy-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: #00bcd4;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .buy-btn:hover {
+    background: #0097a7;
+    transform: scale(1.1);
+  }

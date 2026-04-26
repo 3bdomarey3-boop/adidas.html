@@ -1,0 +1,48 @@
+/* Footer */
+.footer {
+    background: #111;
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  /* الكونتينر */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* كل بوكس */
+  .footer-box {
+    width: 250px;
+  }
+  
+  /* العناوين */
+  .footer-box h3 {
+    color: #00bcd4;
+    margin-bottom: 15px;
+  }
+  
+  /* اللينكات */
+  .footer-box a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+  }
+  
+  .footer-box a:hover {
+    color: #00bcd4;
+    transform: translateX(5px);
+  }
+  
+  /* الجزء السفلي */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+  }
